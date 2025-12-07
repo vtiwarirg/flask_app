@@ -1,0 +1,25 @@
+# Sample Test Document
+
+## Introduction
+This is a sample document for testing the document upload and search functionality.
+
+## Artificial Intelligence
+Artificial Intelligence (AI) is the simulation of human intelligence by machines. It includes machine learning, natural language processing, and computer vision.
+
+## Machine Learning
+Machine learning is a subset of AI that enables computers to learn from data without being explicitly programmed. Common algorithms include neural networks, decision trees, and support vector machines.
+
+## Natural Language Processing
+Natural Language Processing (NLP) is a field of AI that focuses on the interaction between computers and human language. It powers applications like chatbots, translation services, and sentiment analysis.
+
+## Deep Learning
+Deep learning is a subset of machine learning that uses neural networks with multiple layers. It has revolutionized fields like image recognition, speech recognition, and autonomous vehicles.
+
+## Data Science
+Data science combines statistics, programming, and domain expertise to extract insights from data. It uses tools like Python, R, and SQL for data analysis and visualization.
+
+## Cloud Computing
+Cloud computing provides on-demand access to computing resources over the internet. Major providers include AWS, Azure, and Google Cloud Platform.
+
+## Conclusion
+These technologies are transforming industries and creating new opportunities for innovation and growth.

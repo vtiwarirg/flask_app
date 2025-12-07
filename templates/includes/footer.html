@@ -1,0 +1,44 @@
+<!-- Footer-->
+<footer class="border-top ai-gradient text-white">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-12 col-lg-10 col-xl-9">
+                <div class="text-center">
+                    <h5><i class="fas fa-robot me-2"></i>AI Chatbot Assistant</h5>
+                    <p class="mb-3">Powered by Machine Learning • Privacy-Focused • No External Dependencies</p>
+                    
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <h6><i class="fas fa-brain me-1"></i>Technologies</h6>
+                            <small>
+                                NLTK • spaCy<br>
+                                scikit-learn • Flask
+                            </small>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <h6><i class="fas fa-shield-alt me-1"></i>Privacy</h6>
+                            <small>
+                                Local Processing<br>
+                                No Data Collection
+                            </small>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <h6><i class="fas fa-cogs me-1"></i>Features</h6>
+                            <small>
+                                Intent Recognition<br>
+                                ML-Powered Responses
+                            </small>
+                        </div>
+                    </div>
+                    
+                    <div class="border-top pt-3 mt-3">
+                        <div class="small">
+                            Copyright &copy; AI Chatbot Assistant {{ year|default(2025) }} • 
+                            <a href="{{ url_for('pages.home') }}" class="text-white-50">System Status</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

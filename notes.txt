@@ -1,0 +1,10 @@
+python -m venv venv
+venv\Scripts\activate
+pip install flask python-dotenv
+
+pip freeze > requirements.txt
+
+flask run
+
+
+pip install chromadb openai pypdf python-docx langchain langchain-openai tiktoken

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <div class="text-center mb-5">
+            <h1>Welcome to {{ site_name }}</h1>
+            <p class="lead">Your AI-powered business assistant</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Start Chatting</h5>
+                        <p class="card-text">Get instant help with customer support, HR questions, and IT issues.</p>
+                        <a href="/chat" class="btn btn-primary">Open Chat</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">System Status</h5>
+                        <p class="card-text">
+                            {% if chatbot_available %}
+                                <span class="text-success">✓ Chatbot Available</span><br>
+                                <small>{{ intents_count }} intents loaded</small>
+                            {% else %}
+                                <span class="text-warning">⚠ Basic Mode</span><br>
+                                <small>Limited responses available</small>
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

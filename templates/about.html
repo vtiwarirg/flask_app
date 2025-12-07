@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+
+{% block title %}About - {{ site_name or 'AI Chatbot Assistant' }}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <!-- About Section -->
+        <div class="card shadow">
+            <div class="card-header bg-info text-white">
+                <h2 class="card-title mb-0">
+                    <i class="fas fa-info-circle me-2"></i>About AI Chatbot Assistant
+                </h2>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4><i class="fas fa-robot me-2 text-primary"></i>What is AI Chatbot Assistant?</h4>
+                        <p class="lead">
+                            AI Chatbot Assistant is an intelligent conversational platform designed to provide 
+                            helpful responses and assistance across various topics and queries.
+                        </p>
+                        
+                        <h5><i class="fas fa-star me-2 text-warning"></i>Key Features</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>Intelligent Responses:</strong> Advanced natural language processing for meaningful conversations
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>24/7 Availability:</strong> Get assistance anytime, anywhere
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>Multi-topic Support:</strong> Help with various subjects and inquiries
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>User-friendly Interface:</strong> Simple and intuitive chat experience
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>Contact Support:</strong> Easy way to reach out for additional help
+                            </li>
+                        </ul>
+                        
+                        <h5><i class="fas fa-cogs me-2 text-primary"></i>How It Works</h5>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="text-center">
+                                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                        <i class="fas fa-comment fa-lg"></i>
+                                    </div>
+                                    <h6 class="mt-2">1. Ask Questions</h6>
+                                    <p class="small text-muted">Type your question or message in the chat interface</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="text-center">
+                                    <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                        <i class="fas fa-brain fa-lg"></i>
+                                    </div>
+                                    <h6 class="mt-2">2. AI Processing</h6>
+                                    <p class="small text-muted">Our AI analyzes and understands your query</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="text-center">
+                                    <div class="bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                        <i class="fas fa-reply fa-lg"></i>
+                                    </div>
+                                    <h6 class="mt-2">3. Get Answers</h6>
+                                    <p class="small text-muted">Receive helpful and relevant responses instantly</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h5><i class="fas fa-users me-2 text-success"></i>Who Can Use It?</h5>
+                        <p>
+                            Our AI Chatbot Assistant is designed for everyone! Whether you're a student looking for help with 
+                            homework, a professional seeking quick answers, or anyone with questions about various topics, 
+                            our chatbot is here to assist you.
+                        </p>
+                        
+                        <h5><i class="fas fa-shield-alt me-2 text-warning"></i>Privacy & Security</h5>
+                        <p>
+                            We take your privacy seriously. Your conversations are processed securely, and we don't store 
+                            personal information unless explicitly provided through our contact forms.
+                        </p>
+                        
+                        <div class="alert alert-light border">
+                            <h6><i class="fas fa-lightbulb me-2 text-warning"></i>Getting Started</h6>
+                            <p class="mb-2">Ready to try our AI assistant? Here's how to get started:</p>
+                            <ol class="mb-0">
+                                <li>Visit the <a href="{{ url_for('pages.chat') }}" class="text-decoration-none">Chat page</a></li>
+                                <li>Type your question or select a quick action</li>
+                                <li>Press Enter or click Send</li>
+                                <li>Enjoy the conversation!</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <a href="{{ url_for('pages.chat') }}" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-comments me-2"></i>Start Chatting
+                            </a>
+                            <a href="{{ url_for('pages.home') }}" class="btn btn-outline-info btn-lg">
+                                <i class="fas fa-envelope me-2"></i>Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Technical Information -->
+        <div class="card shadow mt-4">
+            <div class="card-header bg-secondary text-white">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-code me-2"></i>Technical Information
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Built With:</h6>
+                        <ul class="list-unstyled">
+                            <li><i class="fab fa-python me-2 text-info"></i>Python & Flask</li>
+                            <li><i class="fas fa-brain me-2 text-success"></i>Natural Language Processing</li>
+                            <li><i class="fab fa-bootstrap me-2 text-primary"></i>Bootstrap UI</li>
+                            <li><i class="fas fa-mobile-alt me-2 text-warning"></i>Responsive Design</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Features:</h6>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-comments me-2 text-primary"></i>Real-time Chat</li>
+                            <li><i class="fas fa-envelope me-2 text-info"></i>Contact Forms</li>
+                            <li><i class="fas fa-ticket-alt me-2 text-success"></i>Support Tickets</li>
+                            <li><i class="fas fa-chart-line me-2 text-warning"></i>Performance Optimized</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

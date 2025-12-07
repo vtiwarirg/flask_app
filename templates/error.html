@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <div class="text-center">
+            <h1 class="display-1">{{ error_code or '⚠️' }}</h1>
+            <h2>{{ error_message or error or 'Error' }}</h2>
+            <p class="lead">{{ description or "Something went wrong." }}</p>
+            <a href="{{ url_for('pages.home') }}" class="btn btn-primary">Go Home</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
